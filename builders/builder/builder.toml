@@ -1,4 +1,4 @@
-description = "Ubuntu 26.04 Resolute Rattlesnake base image with buildpacks for Node.js and Procfile"
+description = "Ubuntu 26.04 Resolute Rattlesnake base image with buildpacks for Java, Node.js, .NET, Nginx and Procfile"
 
 [build]
   image = "docker.io/paketobuildpacks/ubuntu-resolute-build:0.0.1"
@@ -23,10 +23,6 @@ description = "Ubuntu 26.04 Resolute Rattlesnake base image with buildpacks for 
   uri = "docker://docker.io/paketobuildpacks/procfile:5.13.5"
   version = "5.13.5"
 
-[[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/web-servers:4.6.1"
-  version = "4.6.1"
-
 [lifecycle]
   version = "0.21.14"
 
@@ -41,12 +37,6 @@ description = "Ubuntu 26.04 Resolute Rattlesnake base image with buildpacks for 
   [[order.group]]
     id = "paketo-buildpacks/java"
     version = "22.2.0"
-
-[[order]]
-
-  [[order.group]]
-    id = "paketo-buildpacks/web-servers"
-    version = "4.6.1"
 
 [[order]]
 
