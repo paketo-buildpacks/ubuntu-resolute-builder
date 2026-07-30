@@ -95,11 +95,18 @@ jobs:
     - name: Compare previous releases
       id: compare_previous_release
       run: |
+        # First release: no tags exist yet, so always treat builders as changed.
+        if ! previous_tag=$(git describe --tags --abbrev=0 2>/dev/null); then
+          echo "No previous release tags found; treating builders as changed"
+          echo "builders_changed=true" >> $GITHUB_OUTPUT
+          exit 0
+        fi
+
         builders=$(echo '${{ needs.preparation.outputs.builders }}' | jq -c '.[]')
         for builder in $builders; do
           builder_path=$(echo "$builder" | jq -r '.path')
 
-          changed=$(git diff --name-only $(git describe --tags --abbrev=0) -- $builder_path/builder.toml)
+          changed=$(git diff --name-only "${previous_tag}" -- $builder_path/builder.toml)
           if [ -z "${changed}" ]
           then
             # We do not write on the github output because this step runs multiple times
