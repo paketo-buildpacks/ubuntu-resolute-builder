@@ -1,7 +1,7 @@
 description = "Ubuntu 26.04 Resolute Rattlesnake base image with buildpacks for Java, Node.js, .NET, Nginx and Procfile"
 
 [build]
-  image = "docker.io/paketobuildpacks/ubuntu-resolute-build:0.0.1"
+  image = "docker.io/paketobuildpacks/ubuntu-resolute-build:0.0.6"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/java-native-image:14.8.0"
