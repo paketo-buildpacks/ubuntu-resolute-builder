@@ -16,10 +16,6 @@ description = "Ubuntu 26.04 Resolute Rattlesnake base image with buildpacks for 
   version = "10.6.1"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/dotnet-core:4.6.1"
-  version = "4.6.1"
-
-[[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/procfile:5.13.5"
   version = "5.13.5"
 
@@ -43,12 +39,6 @@ description = "Ubuntu 26.04 Resolute Rattlesnake base image with buildpacks for 
   [[order.group]]
     id = "paketo-buildpacks/nodejs"
     version = "10.6.1"
-
-[[order]]
-
-  [[order.group]]
-    id = "paketo-buildpacks/dotnet-core"
-    version = "4.6.1"
 
 [[order]]
 
