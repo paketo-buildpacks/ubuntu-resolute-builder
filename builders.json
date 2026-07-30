@@ -1,0 +1,56 @@
+{
+  "builders": [
+    {
+      "name": "ubuntu-resolute-builder-buildpackless",
+      "path": "./builders/builder-buildpackless",
+      "container_repository": "ubuntu-resolute-builder-buildpackless",
+      "test_runners": ["ubuntu-22.04", "ubuntu-22.04-arm"],
+      "test_data": [
+        {
+          "sample_dir": "procfile/procfile-sample",
+          "test_dir": "builders/builder-buildpackless/smoke/testdata/procfile"
+        }
+      ]
+    },
+    {
+      "name": "ubuntu-resolute-builder",
+      "path": "./builders/builder",
+      "container_repository": "ubuntu-resolute-builder",
+      "test_runners": ["ubuntu-22.04", "ubuntu-22.04-arm"],
+      "test_data": [
+        {
+          "sample_dir": "java/native-image/spring-boot-native-image-maven",
+          "test_dir": "builders/builder/smoke/testdata/spring-boot-native-image-maven"
+        },
+        {
+          "sample_dir": "procfile/procfile-sample",
+          "test_dir": "builders/builder/smoke/testdata/procfile"
+        },
+        {
+          "sample_dir": "nodejs/npm",
+          "test_dir": "builders/builder/smoke/testdata/nodejs/npm"
+        },
+        {
+          "sample_dir": "web-servers/httpd-sample",
+          "test_dir": "builders/builder/smoke/testdata/web-servers/httpd-sample"
+        },
+        {
+          "sample_dir": "web-servers/nginx-sample",
+          "test_dir": "builders/builder/smoke/testdata/web-servers/nginx-sample"
+        },
+        {
+          "sample_dir": "web-servers/react-frontend-sample",
+          "test_dir": "builders/builder/smoke/testdata/web-servers/react-frontend-sample"
+        },
+        {
+          "sample_dir": "web-servers/nginx-sample",
+          "test_dir": "builders/builder/smoke/testdata/web-servers/nginx-sample"
+        },
+        {
+          "sample_dir": "dotnet-core/aspnet",
+          "test_dir": "builders/builder/smoke/testdata/dotnet-core/aspnet"
+        }
+      ]
+    }
+  ]
+}

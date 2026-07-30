@@ -1,0 +1,83 @@
+description = "Ubuntu 26.04 Resolute Rattlesnake base image with buildpacks for Node.js and Procfile"
+
+[build]
+  image = "docker.io/paketobuildpacks/ubuntu-resolute-build:0.0.1"
+
+[[buildpacks]]
+  uri = "docker://docker.io/paketobuildpacks/java-native-image:14.8.0"
+  version = "14.8.0"
+
+[[buildpacks]]
+  uri = "docker://docker.io/paketobuildpacks/java:22.2.0"
+  version = "22.2.0"
+
+[[buildpacks]]
+  uri = "docker://docker.io/paketobuildpacks/nodejs:10.6.1"
+  version = "10.6.1"
+
+[[buildpacks]]
+  uri = "docker://docker.io/paketobuildpacks/dotnet-core:4.6.1"
+  version = "4.6.1"
+
+[[buildpacks]]
+  uri = "docker://docker.io/paketobuildpacks/procfile:5.13.5"
+  version = "5.13.5"
+
+[[buildpacks]]
+  uri = "docker://docker.io/paketobuildpacks/web-servers:4.6.1"
+  version = "4.6.1"
+
+[lifecycle]
+  version = "0.21.14"
+
+[[order]]
+
+  [[order.group]]
+    id = "paketo-buildpacks/java-native-image"
+    version = "14.8.0"
+
+[[order]]
+
+  [[order.group]]
+    id = "paketo-buildpacks/java"
+    version = "22.2.0"
+
+[[order]]
+
+  [[order.group]]
+    id = "paketo-buildpacks/web-servers"
+    version = "4.6.1"
+
+[[order]]
+
+  [[order.group]]
+    id = "paketo-buildpacks/nodejs"
+    version = "10.6.1"
+
+[[order]]
+
+  [[order.group]]
+    id = "paketo-buildpacks/dotnet-core"
+    version = "4.6.1"
+
+[[order]]
+
+  [[order.group]]
+    id = "paketo-buildpacks/procfile"
+    version = "5.13.5"
+
+[run]
+
+  [[run.images]]
+    image = "docker.io/paketobuildpacks/ubuntu-resolute-run:latest"
+
+[stack]
+  id = "io.buildpacks.stacks.resolute"
+
+[[targets]]
+  arch = "amd64"
+  os = "linux"
+
+[[targets]]
+  arch = "arm64"
+  os = "linux"
