@@ -12,8 +12,8 @@ description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Java
   version = "22.2.0"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/nodejs:10.6.1"
-  version = "10.6.1"
+  uri = "docker://docker.io/paketobuildpacks/nodejs:10.7.0"
+  version = "10.7.0"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/procfile:5.13.5"
@@ -38,7 +38,7 @@ description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Java
 
   [[order.group]]
     id = "paketo-buildpacks/nodejs"
-    version = "10.6.1"
+    version = "10.7.0"
 
 [[order]]
 
