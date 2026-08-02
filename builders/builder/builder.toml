@@ -4,8 +4,8 @@ description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Java
   image = "docker.io/paketobuildpacks/ubuntu-resolute-build:0.0.7"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/java-native-image:14.8.0"
-  version = "14.8.0"
+  uri = "docker://docker.io/paketobuildpacks/java-native-image:14.9.0"
+  version = "14.9.0"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/java:22.2.0"
@@ -26,7 +26,7 @@ description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Java
 
   [[order.group]]
     id = "paketo-buildpacks/java-native-image"
-    version = "14.8.0"
+    version = "14.9.0"
 
 [[order]]
 
