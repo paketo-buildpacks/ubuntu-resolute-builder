@@ -4,16 +4,16 @@ description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Java
   image = "docker.io/paketobuildpacks/ubuntu-resolute-build:0.0.10"
 
 [[buildpacks]]
+  uri = "paketo-buildpacks/dotnet-core"
+  version = "4.7.1"
+
+[[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/java-native-image:14.9.0"
   version = "14.9.0"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/java:22.3.0"
   version = "22.3.0"
-
-[[buildpacks]]
-  uri = "paketo-buildpacks/dotnet-core"
-  version = "4.7.1"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/nodejs:10.9.0"
@@ -25,6 +25,12 @@ description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Java
 
 [lifecycle]
   version = "0.21.15"
+
+[[order]]
+
+  [[order.group]]
+    id = "paketo-buildpacks/dotnet-core"
+    version = "4.7.1"
 
 [[order]]
 
@@ -43,12 +49,6 @@ description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Java
   [[order.group]]
     id = "paketo-buildpacks/nodejs"
     version = "10.9.0"
-
-[[order]]
-
-  [[order.group]]
-    id = "paketo-buildpacks/dotnet-core"
-    version = "4.7.1"
 
 [[order]]
 
