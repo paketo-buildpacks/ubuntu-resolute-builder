@@ -4,7 +4,7 @@ description = "Ubuntu 26.04 Resolute Raccoon base image with no buildpacks inclu
   image = "docker.io/paketobuildpacks/ubuntu-resolute-build:0.0.11"
 
 [lifecycle]
-  version = "0.21.15"
+  version = "0.21.16"
 
 [run]
 
