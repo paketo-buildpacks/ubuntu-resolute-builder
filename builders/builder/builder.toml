@@ -5,7 +5,7 @@ description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Java
 
 [[buildpacks]]
   uri = "paketo-buildpacks/dotnet-core"
-  version = "4.7.1"
+  version = "4.7.2"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/java-native-image:14.9.0"
@@ -34,7 +34,7 @@ description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Java
 
   [[order.group]]
     id = "paketo-buildpacks/dotnet-core"
-    version = "4.7.1"
+    version = "4.7.2"
 
 [[order]]
 
