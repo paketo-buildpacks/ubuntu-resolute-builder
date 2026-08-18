@@ -49,6 +49,34 @@
         {
           "sample_dir": "dotnet-core/aspnet",
           "test_dir": "builders/builder/smoke/testdata/dotnet-core/aspnet"
+        },
+        {
+          "sample_dir": "ruby/passenger",
+          "test_dir": "builders/builder/smoke/testdata/ruby/passenger"
+        },
+        {
+          "sample_dir": "ruby/puma",
+          "test_dir": "builders/builder/smoke/testdata/ruby/puma"
+        },
+        {
+          "sample_dir": "ruby/rackup",
+          "test_dir": "builders/builder/smoke/testdata/ruby/rackup"
+        },
+        {
+          "sample_dir": "ruby/rails_assets",
+          "test_dir": "builders/builder/smoke/testdata/ruby/rails_assets"
+        },
+        {
+          "sample_dir": "ruby/rake",
+          "test_dir": "builders/builder/smoke/testdata/ruby/rake"
+        },
+        {
+          "sample_dir": "ruby/thin",
+          "test_dir": "builders/builder/smoke/testdata/ruby/thin"
+        },
+        {
+          "sample_dir": "ruby/unicorn",
+          "test_dir": "builders/builder/smoke/testdata/ruby/unicorn"
         }
       ]
     }

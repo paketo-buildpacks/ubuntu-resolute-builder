@@ -1,4 +1,4 @@
-description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Java, Node.js, .NET and Procfile"
+description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Java, Node.js, .NET, Procfile and Ruby"
 
 [build]
   image = "docker.io/paketobuildpacks/ubuntu-resolute-build:0.0.11"
@@ -22,6 +22,10 @@ description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Java
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/procfile:5.13.6"
   version = "5.13.6"
+
+[[buildpacks]]
+  uri = "docker://docker.io/paketobuildpacks/ruby:3.0.1"
+  version = "3.0.1"
 
 [lifecycle]
   version = "0.21.15"
@@ -55,6 +59,12 @@ description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Java
   [[order.group]]
     id = "paketo-buildpacks/procfile"
     version = "5.13.6"
+
+[[order]]
+
+  [[order.group]]
+    id = "paketo-buildpacks/ruby"
+    version = "3.0.1"
 
 [run]
 
