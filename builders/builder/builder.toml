@@ -1,50 +1,70 @@
-description = "Ubuntu 26.04 Resolute Rattlesnake base image with buildpacks for Java, Node.js, .NET, Nginx and Procfile"
+description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Java, Node.js, .NET, Procfile and Ruby"
 
 [build]
-  image = "docker.io/paketobuildpacks/ubuntu-resolute-build:0.0.7"
+  image = "docker.io/paketobuildpacks/ubuntu-resolute-build:0.0.11"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/java-native-image:14.8.0"
-  version = "14.8.0"
+  uri = "paketo-buildpacks/dotnet-core"
+  version = "4.7.2"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/java:22.2.0"
-  version = "22.2.0"
+  uri = "docker://docker.io/paketobuildpacks/java-native-image:14.9.0"
+  version = "14.9.0"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/nodejs:10.6.1"
-  version = "10.6.1"
+  uri = "docker://docker.io/paketobuildpacks/java:22.3.0"
+  version = "22.3.0"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/procfile:5.13.5"
-  version = "5.13.5"
+  uri = "docker://docker.io/paketobuildpacks/nodejs:10.9.0"
+  version = "10.9.0"
+
+[[buildpacks]]
+  uri = "docker://docker.io/paketobuildpacks/procfile:5.13.6"
+  version = "5.13.6"
+
+[[buildpacks]]
+  uri = "docker://docker.io/paketobuildpacks/ruby:3.0.1"
+  version = "3.0.1"
 
 [lifecycle]
-  version = "0.21.14"
+  version = "0.21.15"
+
+[[order]]
+
+  [[order.group]]
+    id = "paketo-buildpacks/dotnet-core"
+    version = "4.7.2"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/java-native-image"
-    version = "14.8.0"
+    version = "14.9.0"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/java"
-    version = "22.2.0"
+    version = "22.3.0"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/nodejs"
-    version = "10.6.1"
+    version = "10.9.0"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
-    version = "5.13.5"
+    version = "5.13.6"
+
+[[order]]
+
+  [[order.group]]
+    id = "paketo-buildpacks/ruby"
+    version = "3.0.1"
 
 [run]
 
