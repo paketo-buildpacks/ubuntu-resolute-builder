@@ -2,7 +2,7 @@
 
 ## Building
 
-This is a simple go web server that is compiled at run time. It requires specific buildpacks, which are specified below. Since we are specifying the buildpacks at build time any builder can be used, but the ubuntu-resolute-builder-buildpackless builder is used in this example.
+This is a simple go web server that is compiled at run time. It requires specific buildpacks, which are specified below. Since we are specifying the buildpacks at build time any builder can be used, but the ubuntu-noble-builder-buildpackless builder is used in this example.
 
 ### Buildpacks
 * The [go-dist](https://github.com/paketo-buildpacks/go-dist) buildpack provides golang, but it needs another buildpack to require go in order to participate in the build.
@@ -11,7 +11,7 @@ This is a simple go web server that is compiled at run time. It requires specifi
 
 ```bash
 pack build applications/procfile \
-    --builder docker.io/paketobuildpacks/ubuntu-resolute-builder-buildpackless \
+    --builder docker.io/paketobuildpacks/ubuntu-noble-builder-buildpackless \
     --buildpack docker.io/paketobuildpacks/go-dist \
     --buildpack docker.io/paketocommunity/build-plan \
     --buildpack docker.io/paketobuildpacks/procfile
