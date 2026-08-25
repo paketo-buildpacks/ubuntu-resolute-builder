@@ -1,7 +1,7 @@
 description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Java, Node.js, .NET, Procfile and Ruby"
 
 [build]
-  image = "docker.io/paketobuildpacks/ubuntu-resolute-build:0.0.13"
+  image = "docker.io/paketobuildpacks/ubuntu-resolute-build:0.0.14"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/dotnet-core:4.8.0"
