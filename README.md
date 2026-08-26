@@ -2,7 +2,7 @@
 
 ## `paketobuildpacks/ubuntu-resolute-builder`
 
-This builder uses the [Paketo Ubuntu Resolute base images](https://github.com/paketo-buildpacks/ubuntu-resolute-base-images) with buildpacks for Java, Node.js, .NET, Procfile and Ruby.
+This builder uses the [Paketo Ubuntu Resolute base images](https://github.com/paketo-buildpacks/ubuntu-resolute-base-images) with buildpacks for Java, Node.js, .NET, PHP, Procfile and Ruby.
 
 For example, with the `pack` CLI, use `--buildpack` as follows:
 

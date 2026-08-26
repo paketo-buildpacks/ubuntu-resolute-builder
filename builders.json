@@ -55,6 +55,38 @@
           "test_dir": "builders/builder/smoke/testdata/ruby/passenger"
         },
         {
+          "sample_dir": "php/app_with_extensions",
+          "test_dir": "builders/builder/smoke/testdata/php/app_with_extensions"
+        },
+        {
+          "sample_dir": "php/builtin-server",
+          "test_dir": "builders/builder/smoke/testdata/php/builtin-server"
+        },
+        {
+          "sample_dir": "php/composer",
+          "test_dir": "builders/builder/smoke/testdata/php/composer"
+        },
+        {
+          "sample_dir": "php/composer_with_extensions",
+          "test_dir": "builders/builder/smoke/testdata/php/composer_with_extensions"
+        },
+        {
+          "sample_dir": "php/httpd",
+          "test_dir": "builders/builder/smoke/testdata/php/httpd"
+        },
+        {
+          "sample_dir": "php/memcached_session_handler",
+          "test_dir": "builders/builder/smoke/testdata/php/memcached_session_handler"
+        },
+        {
+          "sample_dir": "php/nginx",
+          "test_dir": "builders/builder/smoke/testdata/php/nginx"
+        },
+        {
+          "sample_dir": "php/redis_session_handler",
+          "test_dir": "builders/builder/smoke/testdata/php/redis_session_handler"
+        },
+        {
           "sample_dir": "ruby/puma",
           "test_dir": "builders/builder/smoke/testdata/ruby/puma"
         },

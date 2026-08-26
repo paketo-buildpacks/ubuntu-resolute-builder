@@ -54,6 +54,7 @@ func TestSmoke(t *testing.T) {
 	suite("Java", testJava)
 	suite("Node.js", testNodejs)
 	suite("Dotnet", testDotnet)
+	suite("PHP", testProcfile)
 	suite("Procfile", testProcfile)
 	suite("Ruby", testRuby)
 
