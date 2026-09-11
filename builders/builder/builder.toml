@@ -32,7 +32,7 @@ description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Java
   version = "3.0.4"
 
 [lifecycle]
-  version = "0.21.18"
+  version = "0.21.19"
 
 [[order]]
 
