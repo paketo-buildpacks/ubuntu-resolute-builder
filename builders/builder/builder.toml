@@ -24,8 +24,8 @@ description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Java
   version = "3.5.0"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/procfile:5.15.0"
-  version = "5.15.0"
+  uri = "docker://docker.io/paketobuildpacks/procfile:5.15.1"
+  version = "5.15.1"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/ruby:3.0.6"
@@ -68,7 +68,7 @@ description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Java
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
-    version = "5.15.0"
+    version = "5.15.1"
 
 [[order]]
 
