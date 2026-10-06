@@ -12,12 +12,12 @@ description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Go, 
   version = "4.22.0"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/java-native-image:14.12.0"
-  version = "14.12.0"
+  uri = "docker://docker.io/paketobuildpacks/java-native-image:14.13.0"
+  version = "14.13.0"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/java:22.5.0"
-  version = "22.5.0"
+  uri = "docker://docker.io/paketobuildpacks/java:22.6.0"
+  version = "22.6.0"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/nodejs:10.13.0"
@@ -54,13 +54,13 @@ description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Go, 
 
   [[order.group]]
     id = "paketo-buildpacks/java-native-image"
-    version = "14.12.0"
+    version = "14.13.0"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/java"
-    version = "22.5.0"
+    version = "22.6.0"
 
 [[order]]
 
