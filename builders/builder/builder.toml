@@ -28,8 +28,8 @@ description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Go, 
   version = "3.7.0"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/procfile:5.15.2"
-  version = "5.15.2"
+  uri = "docker://docker.io/paketobuildpacks/procfile:5.15.3"
+  version = "5.15.3"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/ruby:3.1.1"
@@ -78,7 +78,7 @@ description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Go, 
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
-    version = "5.15.2"
+    version = "5.15.3"
 
 [[order]]
 
