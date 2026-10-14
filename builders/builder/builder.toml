@@ -4,8 +4,8 @@ description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Go, 
   image = "docker.io/paketobuildpacks/ubuntu-resolute-build:0.0.32"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/dotnet-core:4.12.2"
-  version = "4.12.2"
+  uri = "docker://docker.io/paketobuildpacks/dotnet-core:4.12.3"
+  version = "4.12.3"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/go:4.22.1"
@@ -28,8 +28,8 @@ description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Go, 
   version = "3.7.1"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/procfile:5.15.3"
-  version = "5.15.3"
+  uri = "docker://docker.io/paketobuildpacks/procfile:5.15.4"
+  version = "5.15.4"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/ruby:3.1.2"
@@ -42,7 +42,7 @@ description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Go, 
 
   [[order.group]]
     id = "paketo-buildpacks/dotnet-core"
-    version = "4.12.2"
+    version = "4.12.3"
 
 [[order]]
 
@@ -78,7 +78,7 @@ description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Go, 
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
-    version = "5.15.3"
+    version = "5.15.4"
 
 [[order]]
 
