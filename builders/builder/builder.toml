@@ -1,15 +1,15 @@
 description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Go, Java, Node.js, .NET, PHP, Procfile and Ruby"
 
 [build]
-  image = "docker.io/paketobuildpacks/ubuntu-resolute-build:0.0.38"
+  image = "docker.io/paketobuildpacks/ubuntu-resolute-build:0.0.39"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/dotnet-core:4.12.4"
-  version = "4.12.4"
+  uri = "docker://docker.io/paketobuildpacks/dotnet-core:4.13.0"
+  version = "4.13.0"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/go:4.23.0"
-  version = "4.23.0"
+  uri = "docker://docker.io/paketobuildpacks/go:4.23.1"
+  version = "4.23.1"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/java-native-image:14.14.1"
@@ -20,20 +20,20 @@ description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Go, 
   version = "22.7.1"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/nodejs:10.14.0"
-  version = "10.14.0"
+  uri = "docker://docker.io/paketobuildpacks/nodejs:10.14.1"
+  version = "10.14.1"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/php:3.7.3"
-  version = "3.7.3"
+  uri = "docker://docker.io/paketobuildpacks/php:3.7.4"
+  version = "3.7.4"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/procfile:5.15.5"
   version = "5.15.5"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/ruby:3.1.3"
-  version = "3.1.3"
+  uri = "docker://docker.io/paketobuildpacks/ruby:3.2.0"
+  version = "3.2.0"
 
 [lifecycle]
   version = "0.21.26"
@@ -42,13 +42,13 @@ description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Go, 
 
   [[order.group]]
     id = "paketo-buildpacks/dotnet-core"
-    version = "4.12.4"
+    version = "4.13.0"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/go"
-    version = "4.23.0"
+    version = "4.23.1"
 
 [[order]]
 
@@ -66,13 +66,13 @@ description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Go, 
 
   [[order.group]]
     id = "paketo-buildpacks/nodejs"
-    version = "10.14.0"
+    version = "10.14.1"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/php"
-    version = "3.7.3"
+    version = "3.7.4"
 
 [[order]]
 
@@ -84,7 +84,7 @@ description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Go, 
 
   [[order.group]]
     id = "paketo-buildpacks/ruby"
-    version = "3.1.3"
+    version = "3.2.0"
 
 [run]
 
