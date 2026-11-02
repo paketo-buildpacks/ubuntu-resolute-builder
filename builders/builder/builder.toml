@@ -36,7 +36,7 @@ description = "Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Go, 
   version = "3.3.0"
 
 [lifecycle]
-  version = "0.21.26"
+  version = "0.21.27"
 
 [[order]]
 
