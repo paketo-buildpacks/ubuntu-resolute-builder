@@ -33,7 +33,7 @@ uri = 'docker://docker.io/paketobuildpacks/ruby:3.4.0'
 version = '3.4.0'
 
 [lifecycle]
-version = '0.21.28'
+version = '0.21.29'
 
 [[order]]
 [[order.group]]
