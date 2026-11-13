@@ -4,7 +4,7 @@ description = 'Ubuntu 26.04 Resolute Raccoon base image with no buildpacks inclu
 version = '0.21.29'
 
 [build]
-image = 'docker.io/paketobuildpacks/ubuntu-resolute-build:0.0.49'
+image = 'docker.io/paketobuildpacks/ubuntu-resolute-build:0.0.50'
 
 [run]
 [[run.images]]
