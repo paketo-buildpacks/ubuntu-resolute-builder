@@ -76,7 +76,7 @@ id = 'paketo-buildpacks/ruby'
 version = '3.4.0'
 
 [build]
-image = 'docker.io/paketobuildpacks/ubuntu-resolute-build:0.0.48'
+image = 'docker.io/paketobuildpacks/ubuntu-resolute-build:0.0.49'
 
 [run]
 [[run.images]]
