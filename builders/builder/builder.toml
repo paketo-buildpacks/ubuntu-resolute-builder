@@ -29,8 +29,8 @@ uri = 'docker://docker.io/paketobuildpacks/procfile:5.15.9'
 version = '5.15.9'
 
 [[buildpacks]]
-uri = 'docker://docker.io/paketobuildpacks/ruby:3.4.1'
-version = '3.4.1'
+uri = 'docker://docker.io/paketobuildpacks/ruby:3.5.0'
+version = '3.5.0'
 
 [lifecycle]
 version = '0.21.29'
@@ -73,7 +73,7 @@ version = '5.15.9'
 [[order]]
 [[order.group]]
 id = 'paketo-buildpacks/ruby'
-version = '3.4.1'
+version = '3.5.0'
 
 [build]
 image = 'docker.io/paketobuildpacks/ubuntu-resolute-build:0.0.51'
