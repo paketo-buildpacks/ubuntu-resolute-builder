@@ -1,24 +1,24 @@
 description = 'Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Go, Java, Node.js, .NET, PHP, Procfile and Ruby'
 
 [[buildpacks]]
-uri = 'docker://docker.io/paketobuildpacks/dotnet-core:4.15.1'
-version = '4.15.1'
+uri = 'docker://docker.io/paketobuildpacks/dotnet-core:4.15.2'
+version = '4.15.2'
 
 [[buildpacks]]
-uri = 'docker://docker.io/paketobuildpacks/go:4.23.4'
-version = '4.23.4'
+uri = 'docker://docker.io/paketobuildpacks/go:4.23.5'
+version = '4.23.5'
 
 [[buildpacks]]
-uri = 'docker://docker.io/paketobuildpacks/java-native-image:14.15.0'
-version = '14.15.0'
+uri = 'docker://docker.io/paketobuildpacks/java-native-image:14.15.1'
+version = '14.15.1'
 
 [[buildpacks]]
-uri = 'docker://docker.io/paketobuildpacks/java:22.9.1'
-version = '22.9.1'
+uri = 'docker://docker.io/paketobuildpacks/java:22.9.2'
+version = '22.9.2'
 
 [[buildpacks]]
-uri = 'docker://docker.io/paketobuildpacks/nodejs:10.16.0'
-version = '10.16.0'
+uri = 'docker://docker.io/paketobuildpacks/nodejs:10.17.0'
+version = '10.17.0'
 
 [[buildpacks]]
 uri = 'docker://docker.io/paketobuildpacks/php:3.8.2'
@@ -29,8 +29,8 @@ uri = 'docker://docker.io/paketobuildpacks/procfile:5.15.9'
 version = '5.15.9'
 
 [[buildpacks]]
-uri = 'docker://docker.io/paketobuildpacks/ruby:3.5.0'
-version = '3.5.0'
+uri = 'docker://docker.io/paketobuildpacks/ruby:3.5.1'
+version = '3.5.1'
 
 [lifecycle]
 version = '0.21.29'
@@ -38,27 +38,27 @@ version = '0.21.29'
 [[order]]
 [[order.group]]
 id = 'paketo-buildpacks/dotnet-core'
-version = '4.15.1'
+version = '4.15.2'
 
 [[order]]
 [[order.group]]
 id = 'paketo-buildpacks/go'
-version = '4.23.4'
+version = '4.23.5'
 
 [[order]]
 [[order.group]]
 id = 'paketo-buildpacks/java-native-image'
-version = '14.15.0'
+version = '14.15.1'
 
 [[order]]
 [[order.group]]
 id = 'paketo-buildpacks/java'
-version = '22.9.1'
+version = '22.9.2'
 
 [[order]]
 [[order.group]]
 id = 'paketo-buildpacks/nodejs'
-version = '10.16.0'
+version = '10.17.0'
 
 [[order]]
 [[order.group]]
@@ -73,7 +73,7 @@ version = '5.15.9'
 [[order]]
 [[order.group]]
 id = 'paketo-buildpacks/ruby'
-version = '3.5.0'
+version = '3.5.1'
 
 [build]
 image = 'docker.io/paketobuildpacks/ubuntu-resolute-build:0.0.52'
