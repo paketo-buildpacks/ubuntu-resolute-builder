@@ -21,8 +21,8 @@ uri = 'docker://docker.io/paketobuildpacks/nodejs:10.16.0'
 version = '10.16.0'
 
 [[buildpacks]]
-uri = 'docker://docker.io/paketobuildpacks/php:3.8.1'
-version = '3.8.1'
+uri = 'docker://docker.io/paketobuildpacks/php:3.8.2'
+version = '3.8.2'
 
 [[buildpacks]]
 uri = 'docker://docker.io/paketobuildpacks/procfile:5.15.9'
@@ -63,7 +63,7 @@ version = '10.16.0'
 [[order]]
 [[order.group]]
 id = 'paketo-buildpacks/php'
-version = '3.8.1'
+version = '3.8.2'
 
 [[order]]
 [[order.group]]
@@ -76,7 +76,7 @@ id = 'paketo-buildpacks/ruby'
 version = '3.5.0'
 
 [build]
-image = 'docker.io/paketobuildpacks/ubuntu-resolute-build:0.0.51'
+image = 'docker.io/paketobuildpacks/ubuntu-resolute-build:0.0.52'
 
 [run]
 [[run.images]]
