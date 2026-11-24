@@ -1,8 +1,8 @@
 description = 'Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Go, Java, Node.js, .NET, PHP, Procfile and Ruby'
 
 [[buildpacks]]
-uri = 'docker://docker.io/paketobuildpacks/dotnet-core:4.15.2'
-version = '4.15.2'
+uri = 'docker://docker.io/paketobuildpacks/dotnet-core:4.15.3'
+version = '4.15.3'
 
 [[buildpacks]]
 uri = 'docker://docker.io/paketobuildpacks/go:4.23.5'
@@ -38,7 +38,7 @@ version = '0.21.29'
 [[order]]
 [[order.group]]
 id = 'paketo-buildpacks/dotnet-core'
-version = '4.15.2'
+version = '4.15.3'
 
 [[order]]
 [[order.group]]
