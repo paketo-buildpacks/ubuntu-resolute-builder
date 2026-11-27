@@ -1,36 +1,36 @@
 description = 'Ubuntu 26.04 Resolute Raccoon base image with buildpacks for Go, Java, Node.js, .NET, PHP, Procfile and Ruby'
 
 [[buildpacks]]
-uri = 'docker://docker.io/paketobuildpacks/dotnet-core:4.15.3'
-version = '4.15.3'
+uri = 'docker://docker.io/paketobuildpacks/dotnet-core:4.15.4'
+version = '4.15.4'
 
 [[buildpacks]]
-uri = 'docker://docker.io/paketobuildpacks/go:4.23.5'
-version = '4.23.5'
+uri = 'docker://docker.io/paketobuildpacks/go:4.23.6'
+version = '4.23.6'
 
 [[buildpacks]]
-uri = 'docker://docker.io/paketobuildpacks/java-native-image:14.15.1'
-version = '14.15.1'
+uri = 'docker://docker.io/paketobuildpacks/java-native-image:14.16.0'
+version = '14.16.0'
 
 [[buildpacks]]
-uri = 'docker://docker.io/paketobuildpacks/java:22.10.0'
-version = '22.10.0'
+uri = 'docker://docker.io/paketobuildpacks/java:22.11.0'
+version = '22.11.0'
 
 [[buildpacks]]
-uri = 'docker://docker.io/paketobuildpacks/nodejs:10.17.0'
-version = '10.17.0'
+uri = 'docker://docker.io/paketobuildpacks/nodejs:10.18.0'
+version = '10.18.0'
 
 [[buildpacks]]
-uri = 'docker://docker.io/paketobuildpacks/php:3.8.2'
-version = '3.8.2'
+uri = 'docker://docker.io/paketobuildpacks/php:3.8.3'
+version = '3.8.3'
 
 [[buildpacks]]
 uri = 'docker://docker.io/paketobuildpacks/procfile:5.15.10'
 version = '5.15.10'
 
 [[buildpacks]]
-uri = 'docker://docker.io/paketobuildpacks/ruby:3.5.1'
-version = '3.5.1'
+uri = 'docker://docker.io/paketobuildpacks/ruby:3.6.0'
+version = '3.6.0'
 
 [lifecycle]
 version = '0.21.30'
@@ -38,32 +38,32 @@ version = '0.21.30'
 [[order]]
 [[order.group]]
 id = 'paketo-buildpacks/dotnet-core'
-version = '4.15.3'
+version = '4.15.4'
 
 [[order]]
 [[order.group]]
 id = 'paketo-buildpacks/go'
-version = '4.23.5'
+version = '4.23.6'
 
 [[order]]
 [[order.group]]
 id = 'paketo-buildpacks/java-native-image'
-version = '14.15.1'
+version = '14.16.0'
 
 [[order]]
 [[order.group]]
 id = 'paketo-buildpacks/java'
-version = '22.10.0'
+version = '22.11.0'
 
 [[order]]
 [[order.group]]
 id = 'paketo-buildpacks/nodejs'
-version = '10.17.0'
+version = '10.18.0'
 
 [[order]]
 [[order.group]]
 id = 'paketo-buildpacks/php'
-version = '3.8.2'
+version = '3.8.3'
 
 [[order]]
 [[order.group]]
@@ -73,7 +73,7 @@ version = '5.15.10'
 [[order]]
 [[order.group]]
 id = 'paketo-buildpacks/ruby'
-version = '3.5.1'
+version = '3.6.0'
 
 [build]
 image = 'docker.io/paketobuildpacks/ubuntu-resolute-build:0.0.55'
